@@ -1,5 +1,6 @@
 import React from 'react'
 import sidebarpng from '../img/sidebar.png'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faTableColumns, faRightLeft, faBookmark, faCalendarDay, faGear } from "@fortawesome/free-solid-svg-icons"
 const Sidebar = () => {
@@ -7,6 +8,7 @@ const Sidebar = () => {
 
 
         <div className='m-4 bg-white w-[15%] grid '>
+
             <div className='flex gap-2 items-center font-bold'>
                 <FontAwesomeIcon icon={faUser} />
                 <h1>SUNNY</h1>
@@ -33,7 +35,7 @@ const Sidebar = () => {
 
                 <div className='flex gap-2 items-center'>
                     <FontAwesomeIcon style={{ color: '#b4bdb9' }} icon={faGear} />
-                    <h1>Settings</h1>
+                    <h1><Link to="/settings">Settings</Link></h1>
                 </div>
 
             </div>

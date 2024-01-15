@@ -1,11 +1,11 @@
 import React from 'react'
-
-const Graph = () => {
+import { Line } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
+const Graph = ({ chartData }) => {
     return (
-        <div>
-            <h1>Hii Th</h1>
-        </div>
+        <Line data={chartData} />
     )
 }
 
 export default Graph
+

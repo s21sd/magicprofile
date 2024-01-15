@@ -1,10 +1,10 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from "react-router-dom"
 import Second from './componets/Second';
-import Header from './componets/Header';
 import Signup from './componets/Signup';
 import Login from './componets/Login';
 import Dashboard from './componets/Dashboard';
+import Settings from './componets/Settings';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
             <Route path='/login' element={<Login />}></Route>
             <Route path='/signup' element={<Signup />}></Route>
             <Route path='/dashboard' element={<Dashboard />}></Route>
+            <Route path='settings' element={<Settings />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

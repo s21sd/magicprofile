@@ -2,7 +2,6 @@ import React from 'react'
 import profile from '../img/profile.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
-import gfg from '../img/gfg.png'
 const Dashhead = () => {
     return (
         <div className='flex justify-between m-2 h-fit w-[95%]'>
@@ -10,9 +9,9 @@ const Dashhead = () => {
                 <h1 className='font-bold text-sm'>Hello! Sunny</h1>
                 <p className='text-[12px]'>4.45pm 14 jan 2024</p>
             </div>
-            <div className='bg-gray-200 w-fit h-fit  rounded-sm gap-2'>
+            <div className='bg-gray-200 w-fit h-fit  rounded-2xl gap-2'>
                 <FontAwesomeIcon style={{ color: '#1BF0A2', fontSize: '1em', marginLeft: '4' }} icon={faSearch} />
-                <input className='bg-gray-200 ml-2 p-1' placeholder='Search' type='text' />
+                <input className='bg-gray-200 ml-2 p-1 rounded-2xl' placeholder='Search' type='text' />
             </div>
             <div className='flex gap-3'>
                 <div className='bg-gray-200 w-fit h-fit p-[2px] rounded-full cursor-pointer'>

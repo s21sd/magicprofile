@@ -10,7 +10,6 @@ const Settings = () => {
             <div className="container px-5">
                 <div className="flex flex-col text-center w-full mb-12">
                 </div>
-
                 <div>
                     <div class="container" >
                         <div className="row" >
@@ -77,3 +76,4 @@ const Settings = () => {
 }
 
 export default Settings
+// efd6017c282f3eede3b17e22f2e0b1e1427440e1

@@ -6,7 +6,7 @@ import Slider from './Slider';
 import Graph from './Graph';
 import { UserData } from './Datai';
 import Recentactivity from './Recentactivity';
-const Dashboard = () => {
+const Dashboard = ({ onLogout }) => {
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
@@ -35,7 +35,7 @@ const Dashboard = () => {
       </div>
       <div className="flex-grow">
         <div className="grid w-full">
-          <Dashhead />
+          <Dashhead onLogout={onLogout} />
           <Slider />
         </div>
         <div style={{ width: 500 }} className='grid justify-center items-center'>

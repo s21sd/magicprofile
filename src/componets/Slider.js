@@ -3,13 +3,13 @@ import SwiperCard from './SwiperCard';
 import Data from './Data';
 const Slider = () => {
     return (
-        <div className='flex'>
+        <div className='flex flex-wrap rounded-xl m-2'>
             {
                 Data.map((item, index) => {
                     return (
-                        <div key={index}>
-                            <SwiperCard props={item} />
-                        </div>
+
+                        <SwiperCard key={index} props={item} />
+
                     )
                 })
             }

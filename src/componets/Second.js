@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLessThan, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import sec from '../img/sec.png'
+import sec from '../img/sec2.png'
 import Header from './Header';
 const Second = ({ isLoggedIn, onLogout }) => {
 

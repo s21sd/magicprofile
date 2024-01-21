@@ -2,7 +2,7 @@ import React from 'react'
 import sidebarpng from '../img/sidebar.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faTableColumns, faRightLeft, faBookmark, faCalendarDay, faGear } from "@fortawesome/free-solid-svg-icons"
+import { faUser, faTableColumns, faRightLeft, faBookmark, faGear, faAddressCard } from "@fortawesome/free-solid-svg-icons"
 const Sidebar = () => {
     return (
 
@@ -29,8 +29,8 @@ const Sidebar = () => {
                     <h1>Liberary</h1>
                 </div>
                 <div className='flex gap-2 items-center'>
-                    <FontAwesomeIcon style={{ color: '#b4bdb9' }} icon={faCalendarDay} />
-                    <h1>Schedules</h1>
+                    <FontAwesomeIcon style={{ color: '#b4bdb9' }} icon={faAddressCard} />
+                    <h1><Link to="/about">About</Link></h1>
                 </div>
 
                 <div className='flex gap-2 items-center'>

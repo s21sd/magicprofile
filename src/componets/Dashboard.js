@@ -36,7 +36,9 @@ const Dashboard = ({ onLogout }) => {
       <div className="flex-grow">
         <div className="grid w-full">
           <Dashhead onLogout={onLogout} />
-          <Slider />
+          <div className='bg-green-200 rounded-xl m-2'>
+            <Slider />
+          </div>
         </div>
         <div style={{ width: 500 }} className='grid justify-center items-center'>
           <Graph chartData={userData} />

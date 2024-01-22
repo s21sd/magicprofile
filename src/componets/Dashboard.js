@@ -36,7 +36,7 @@ const Dashboard = ({ onLogout }) => {
       <div className="flex-grow">
         <div className="grid w-full">
           <Dashhead onLogout={onLogout} />
-          <div className='bg-green-200 rounded-xl m-2'>
+          <div className='bg-green-200 rounded-xl'>
             <Slider />
           </div>
         </div>

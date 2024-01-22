@@ -32,13 +32,13 @@ function App() {
           {/* <Header /> */}
           <Routes>
             <Route path="/" element={<Second isLoggedIn={isLoggedIn} onLogout={hadleLogout} />} />
-            {/* <Route path="/login" element={<Login onlogin={handleLogin} />} />
-          <Route path="/signup" element={<Signup />} /> */}
-            <Route path='/dashboard' element={<Dashboard />} />
-            {/* <Route
+            <Route path="/login" element={<Login onlogin={handleLogin} />} />
+          <Route path="/signup" element={<Signup />} />
+            {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+            <Route
             path="/dashboard"
             element={isLoggedIn ? <Dashboard onLogout={hadleLogout} /> : <Login onlogin={handleLogin} />}
-          /> */}
+          />
             <Route path="/settings" element={<Settings />} />
             <Route path="/about" element={<About />} />
           </Routes>

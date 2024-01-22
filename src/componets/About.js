@@ -14,11 +14,15 @@ const About = () => {
                             About Us
                         </h2>
                         <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut
+                            🚀 What We Offer:
+
+                            Visualize your coding progress with interactive and informative charts.
+                            Maintain personalized profile cards showcasing your achievements, solving streaks, and more.
+                            Connect with fellow coders, share your experiences, and celebrate your coding milestones together.
+
+                            Join [Your Website Name] today and embark on a journey of coding excellence! Let your code tell a story.
+
+                            Happy coding! 🎉
 
                         </p>
                         <a href="#"
@@ -29,6 +33,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+     
     )
 }
 

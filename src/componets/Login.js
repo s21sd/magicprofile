@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithPopup } from 'firebase/auth';
+import ParticlesBg from './Particalbg';
 const provider = new GoogleAuthProvider();
 
 const Login = ({ onlogin }) => {
@@ -79,6 +80,7 @@ const Login = ({ onlogin }) => {
     return (
 
         <div className='flex justify-center items-center '>
+            <ParticlesBg />
             <ToastContainer />
             <div className="flex justify-center items-center w-[70%] mb-6">
 
@@ -122,10 +124,7 @@ const Login = ({ onlogin }) => {
                     </div>
                 </div>
 
-                <div className='block'>
-                    <img src={login} alt='mainimg' />
-
-                </div>
+               
 
             </div>
 

@@ -7,20 +7,20 @@ const Apicall = ({ props }) => {
     const [name, setName] = useState('');
 
     // For leetcode
-    // useEffect(() => {
-    //     if (props) {
-    //         axios.get(`https://leetcodestats.cyclic.app/${props}`)
-    //             .then((res) => {
-    //                 // console.log(res);
-    //                 setName(res.data.data);
-    //                 setGlobalData(res.data);
-    //             })
-    //             .catch((error) => {
-    //                 console.error(error);
-    //             });
-    //     }
+    useEffect(() => {
+        if (props) {
+            axios.get(`https://leetcodestats.cyclic.app/${props}`)
+                .then((res) => {
+                    console.log(res);
+                    setName(res.data.data);
+                    setGlobalData(res.data);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        }
 
-    // }, [props, setGlobalData])
+    }, [props, setGlobalData])
 
     return (
         <div>

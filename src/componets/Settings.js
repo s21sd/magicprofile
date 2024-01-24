@@ -6,7 +6,16 @@ import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Data from './Data';
 import Apicall from './Apicall';
 const Settings = () => {
+    const leet = "https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png";
+    const gfg = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png";
+    const forces = "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3629285-3031869.png?f=webp";
+    const hack = "https://repository-images.githubusercontent.com/212970495/8afad980-e81a-11e9-9aaf-82e2f122f5bd";
+    const chef = "https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
     const [leetCode, setLeetCode] = useState();
+    const [Gfg, setGfg] = useState();
+    const [codeforces, setCodeForces] = useState();
+    const [hackerrank, setHackRank] = useState();
+    const [codeChef, seCodeChef] = useState();
     const getProfiles = () => {
         // console.log(leetCode);
     }
@@ -45,25 +54,62 @@ const Settings = () => {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div className='flex flex-wrap'>
-                    {
-                        Data.map((item, index) => {
-                            return (
-                                <div key={index} className="flex flex-wrap m-2">
-                                    <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-                                        <div className="h-full flex items-center p-4 rounded-lg">
-                                            <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={item.image} />
-                                            <div className="flex-grow">
-                                                <input onChange={(e) => setLeetCode(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
-                                            </div>
-                                        </div>
-                                    </div>
+
+                    <div className="flex flex-wrap m-2">
+                        <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div className="h-full flex items-center p-4 rounded-lg">
+                                <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={leet} />
+                                <div className="flex-grow">
+                                    <input onChange={(e) => setLeetCode(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap m-2">
+                        <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div className="h-full flex items-center p-4 rounded-lg">
+                                <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={gfg} />
+                                <div className="flex-grow">
+                                    <input onChange={(e) => setGfg(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap m-2">
+                        <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div className="h-full flex items-center p-4 rounded-lg">
+                                <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={forces} />
+                                <div className="flex-grow">
+                                    <input onChange={(e) => setCodeForces(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap m-2">
+                        <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div className="h-full flex items-center p-4 rounded-lg">
+                                <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={chef} />
+                                <div className="flex-grow">
+                                    <input onChange={(e) => seCodeChef(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap m-2">
+                        <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div className="h-full flex items-center p-4 rounded-lg">
+                                <img alt="team" className="w-6 h-6 bg-gray-100 object-cover object-center rounded-full mr-4" src={hack} />
+                                <div className="flex-grow">
+                                    <input onChange={(e) => setHackRank(e.target.value)} className='bg-gray-200 p-2 rounded-xl border-none outline-none' type='text' placeholder='Enter your Profile url..' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                            )
-
-                        })
-                    }
                 </div>
                 <div className='flex justify-center items-center'>
                     <button onClick={getProfiles} className="rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
@@ -82,5 +128,9 @@ const Settings = () => {
 }
 
 export default Settings
-// efd6017c282f3eede3b17e22f2e0b1e1427440e1
+
 // https://leetcodestats.cyclic.app/sunnysrivastava258/
+
+// https://geeks-for-geeks-stats-api.vercel.app/?userName=${props}
+
+// https://codechef-api.vercel.app/sunnysrivastav

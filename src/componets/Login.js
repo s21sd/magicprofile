@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import login from '../img/login.png'
-import GoogleButton from 'react-google-button'
 import { Link } from 'react-router-dom'
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import auth from './Firebase';
@@ -10,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithPopup } from 'firebase/auth';
 import ParticlesBg from './Particalbg';
+import '../Login.css'
 const provider = new GoogleAuthProvider();
 
 const Login = ({ onlogin }) => {
@@ -79,10 +78,10 @@ const Login = ({ onlogin }) => {
 
     return (
 
-        <div className='flex justify-center items-center '>
+        <div>
             <ParticlesBg />
             <ToastContainer />
-            <div className="flex justify-center items-center w-[70%] mb-6">
+            {/* <div className="flex justify-center items-center w-[70%] mb-6">
 
                 <div className="bg-white w-[50%] px-4 
               flex items-center justify-center">
@@ -126,7 +125,26 @@ const Login = ({ onlogin }) => {
 
                
 
-            </div>
+            </div> */}
+
+          
+            <form className='formo' onSubmit={handleSignIn}>
+                <h3>Login Here</h3>
+
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter email address..." id="username" onChange={(e) => setEmail(e.target.value)} value={email} />
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" onChange={(e) => setPassword(e.target.value)} value={password} />
+
+                <button className='cursor-pointer'>Log In</button>
+
+                <div className="social">
+                    <div onClick={signInWithGoogle} className="go cursor-pointer"><i className="fab fa-google "></i> Google</div>
+                    <div className="fb cursor-pointer"><i className="fab fa-facebook"></i><Link to="/signup">Signup</Link></div>
+                </div>
+            </form>
+
 
         </div>
     )

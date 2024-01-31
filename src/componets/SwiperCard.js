@@ -4,15 +4,15 @@ const SwiperCard = ({ props }) => {
     const { data } = useData();
 
     return (
-        <div className="text-gray-600 w-[90%]  bg-white shadow-md duration-500 hover:scale-105 hover:shadow-xl rounded-xl m-2" >
+        <div className="text-gray-600 bg-white shadow-md duration-500 hover:scale-105 hover:shadow-xl rounded-xl m-2" >
 
             <div className="p-4">
                 <img
                     alt="avatar"
-                    className="object-cover rounded-xl  object-center w-[40px] md:w-5 h-10 md:h-auto mb-4"
+                    className="object-cover rounded-xl object-center w-[30px] mb-4"
                     src={props.image}
                 />
-                <div className="mt-4 text-[12px]">
+                <div className="mt-5 text-[25px]">
                     <p className="text-gray-700 mb-2 font-bold flex">
                         Total Solved: <span className='font-sm ml-1'>
                             {data.totalSolved}

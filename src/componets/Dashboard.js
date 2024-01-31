@@ -41,8 +41,8 @@ const Dashboard = ({ onLogout }) => {
           </div>
         </div>
         <div style={{ width: 500 }} className='grid justify-center items-center'>
-          <Graph chartData={userData} />
-          <Recentactivity />
+          {/* <Graph chartData={userData} />
+          <Recentactivity /> */}
         </div>
       </div>
 

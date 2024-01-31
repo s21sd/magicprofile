@@ -33,23 +33,22 @@ const Dashhead = ({ onLogout }) => {
 
     return (
 
-        <div className='flex justify-between m-2 h-fit w-[95%]'>
+        <div className='flex justify-between m-4 h-fit w-[95%]'>
 
             <div>
-                <h1 className='font-bold text-sm'>Hello! Sunny</h1>
-                <p className='text-[12px]'>{currentDate.toLocaleString()}</p>
+                <h1 className='text-2lg font-bold text-[32px]'>Hello! Sunny</h1>
+                <p className='text-[18px]'>{currentDate.toLocaleString()}</p>
             </div>
-            <div className='bg-gray-200 w-fit h-fit  rounded-2xl gap-2'>
-                <FontAwesomeIcon style={{ color: '#1BF0A2', fontSize: '1em', marginLeft: '4' }} icon={faSearch} />
-                <input className='bg-gray-200 ml-2 p-1 rounded-2xl' placeholder='Search' type='text' />
+            <div className='bg-gray-200 w-fit p-3 h-fit flex justify-center items-center rounded-2xl gap-2'>
+                <FontAwesomeIcon style={{ color: '#1BF0A2', fontSize: '2em', marginLeft: '4' }} icon={faSearch} />
+                <input className='bg-gray-200 ml-2 p-3 rounded-2xl' placeholder='Search' type='text' />
             </div>
-            <div className='flex gap-3'>
-                <div onClick={logout} className='bg-gray-200 w-fit h-fit p-[4px] rounded-full cursor-pointer'>
-                    <FontAwesomeIcon style={{ fontSize: '1rem' }} icon={faRightFromBracket} />
+            <div className='gap-3 flex justify-center items-center'>
+                <div onClick={logout} className='bg-gray-200 w-fit h-fit p-[5px] rounded-lg cursor-pointer'>
+                    <FontAwesomeIcon style={{ fontSize: '2rem' }} icon={faRightFromBracket} />
                 </div>
-                <h1>Sunny</h1>
                 <div>
-                    <img src={profile} width={20} height={20} alt='profile' />
+                    <img src={profile} width={50} height={50} alt='profile' />
                 </div>
             </div>
             <div className='absolute'>

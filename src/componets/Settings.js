@@ -122,7 +122,7 @@ const Settings = () => {
 
 
             </div>
-            <Apicall props={leetCode} />
+            <Apicall leetCode={leetCode} codeChef={codeChef} />
         </div>
     )
 }
@@ -133,4 +133,5 @@ export default Settings
 
 // https://geeks-for-geeks-stats-api.vercel.app/?userName=${props}
 
+// https://codeforces.com/api/user.info?handles=Sunny-23
 // https://codechef-api.vercel.app/sunnysrivastav
